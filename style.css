@@ -1,0 +1,165 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.section-main {
+  background: url("./img/header-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.section-main .container header {
+  padding: 12rem 0 14.5rem;
+}
+.section-main .container header h1 {
+  margin-bottom: 4rem;
+}
+.section-main .container header button {
+  padding: 1.25rem 2.5rem;
+}
+.section-main .container .navbar .navbar-brand img {
+  height: 2rem;
+}
+
+.services .container .service .box-icon {
+  fill: #fff;
+  height: 128px;
+  width: 128px;
+}
+
+.portfolio .container .portfolio-items .portfolio-item .portfolio-link {
+  position: relative;
+}
+.portfolio .container .portfolio-items .portfolio-item .portfolio-link img {
+  max-width: 100%;
+}
+.portfolio .container .portfolio-items .portfolio-item .portfolio-link .portfolio-hover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 193, 7, 0.9);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio .container .portfolio-items .portfolio-item .portfolio-link .portfolio-hover .plus {
+  width: 30%;
+  fill: #fff;
+}
+.portfolio .container .portfolio-items .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+
+.about .container .timeline {
+  position: relative;
+}
+.about .container .timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  left: 50%;
+  background-color: #e9ecef;
+}
+.about .container .timeline .timeline-desc {
+  min-width: 14rem;
+}
+.about .container .timeline .timeline-desc h4,
+.about .container .timeline .timeline-desc p {
+  max-width: 26.5rem;
+}
+.about .container .timeline .timeline-img {
+  min-width: 4rem;
+}
+.about .container .timeline .timeline-img:last-child {
+  max-width: 10rem;
+  height: 10rem;
+  padding: 2rem;
+  outline: 5px solid #e9ecef;
+}
+.about .container .timeline .timeline-img img {
+  min-width: 4rem;
+  border: 3px solid rgb(255, 193, 7);
+  outline: 0.5rem solid #e9ecef;
+}
+
+.team .container .team-members .team-member .member-photo img {
+  width: 14rem;
+}
+.team .container .team-members .team-member .socials {
+  gap: 1rem;
+}
+.team .container .team-members .team-member .socials a {
+  height: 3rem;
+  width: 3rem;
+}
+.team .container .team-members .team-member .socials a svg {
+  width: 1rem;
+  height: 2rem;
+}
+.team .container .last-text {
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.companys .container .company img {
+  height: 3rem;
+}
+
+.contuct {
+  background: url("./img/map-image.png") no-repeat center, #212529;
+  background-size: cover;
+}
+.contuct #Textarea {
+  height: 100%;
+  min-height: 10rem;
+}
+
+.footer .container .socials {
+  gap: 1rem;
+}
+.footer .container .socials a {
+  height: 3rem;
+  width: 3rem;
+}
+.footer .container .socials a svg {
+  width: 1rem;
+  height: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about .container .timeline::before {
+    left: 10%;
+  }
+  .about .container .timeline .timeline-img:last-child {
+    max-width: 10rem;
+    height: 8rem;
+    padding: 2rem;
+  }
+  .about .container .timeline .timeline-img:last-child h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .about .container .timeline::before {
+    left: 2rem;
+  }
+  .about .container .timeline .timeline-img img {
+    border: 2px solid rgb(255, 193, 7);
+    outline: 5px solid #e9ecef;
+  }
+  .about .container .timeline .timeline-img:last-child {
+    margin-left: 0.85rem;
+    padding: 0.8rem;
+    width: 4rem;
+    height: 4rem;
+    outline: 5px solid #e9ecef;
+  }
+  .about .container .timeline .timeline-img:last-child .wraper {
+    margin: 0 auto;
+  }
+  .about .container .timeline .timeline-img:last-child h4 {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
