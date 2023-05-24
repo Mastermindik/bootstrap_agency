@@ -2,164 +2,125 @@
   scroll-behavior: smooth;
 }
 
-.section-main {
-  background: url("./img/header-bg.jpg") no-repeat center;
+body {
+  overflow-x: hidden;
+}
+
+.intro {
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("./img/bg-masthead.jpg") no-repeat center;
   background-size: cover;
+  height: 100vh;
 }
-.section-main .container header {
-  padding: 12rem 0 14.5rem;
+.intro .container .header {
+  padding-top: 11rem;
 }
-.section-main .container header h1 {
-  margin-bottom: 4rem;
+.intro .container .header hr {
+  height: 0.2rem;
+  width: 3.25rem;
+  margin: 1.5rem auto;
 }
-.section-main .container header button {
-  padding: 1.25rem 2.5rem;
+.intro .container .header p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5019607843);
 }
-.section-main .container .navbar .navbar-brand img {
-  height: 2rem;
+.intro .container .header button {
+  border-radius: 10rem;
+}
+.intro .navbar-shrink {
+  background-color: white;
+  transition: background-color 0.4s ease;
+}
+.intro .navbar-shrink .navbar-brand, .intro .navbar-shrink .nav-link {
+  color: black;
+}
+.intro .navbar-shrink .navbar-brand.active, .intro .navbar-shrink .nav-link.active {
+  color: #dc3545;
+}
+.intro .navbar-shrink .navbar-brand:hover, .intro .navbar-shrink .nav-link:hover {
+  color: #dc3545;
+}
+.intro .navbar-shrink .navbar-toggler .navbar-toggler-icon {
+  background: black;
 }
 
-.services .container .service .box-icon {
-  fill: #fff;
-  height: 128px;
-  width: 128px;
+.about .container {
+  padding: 8rem 0;
+}
+.about .container hr {
+  height: 0.2rem;
+  width: 3.25rem;
+  margin: 1.5rem auto;
+}
+.about .container p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.about .container button {
+  border-radius: 10rem;
 }
 
-.portfolio .container .portfolio-items .portfolio-item .portfolio-link {
-  position: relative;
+.services .container {
+  padding: 8rem 0;
 }
-.portfolio .container .portfolio-items .portfolio-item .portfolio-link img {
+.services .container hr {
+  height: 0.2rem;
+  width: 3.25rem;
+  margin: 1.5rem auto;
+}
+.services .container .service-cards {
+  margin-top: 4.5rem;
+}
+.services .container .service-cards .service-card .icon img {
+  width: 40px;
+}
+
+.portfolio .portfolio-box img {
   max-width: 100%;
 }
-.portfolio .container .portfolio-items .portfolio-item .portfolio-link .portfolio-hover {
+.portfolio .portfolio-box .portfolio-hover {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 193, 7, 0.9);
+  background: rgba(220, 53, 69, 0.9);
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.portfolio .container .portfolio-items .portfolio-item .portfolio-link .portfolio-hover .plus {
-  width: 30%;
-  fill: #fff;
+.portfolio .portfolio-box .portfolio-hover p {
+  color: rgba(255, 255, 255, 0.4901960784);
 }
-.portfolio .container .portfolio-items .portfolio-item .portfolio-link:hover .portfolio-hover {
+.portfolio .portfolio-box:hover .portfolio-hover {
   opacity: 1;
 }
 
-.about .container .timeline {
-  position: relative;
+.download {
+  background: #343a40;
 }
-.about .container .timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  left: 50%;
-  background-color: #e9ecef;
+.download .container {
+  padding: 8rem 0;
 }
-.about .container .timeline .timeline-desc {
-  min-width: 14rem;
-}
-.about .container .timeline .timeline-desc h4,
-.about .container .timeline .timeline-desc p {
-  max-width: 26.5rem;
-}
-.about .container .timeline .timeline-img {
-  min-width: 4rem;
-}
-.about .container .timeline .timeline-img:last-child {
-  max-width: 10rem;
-  height: 10rem;
-  padding: 2rem;
-  outline: 5px solid #e9ecef;
-}
-.about .container .timeline .timeline-img img {
-  min-width: 4rem;
-  border: 3px solid rgb(255, 193, 7);
-  outline: 0.5rem solid #e9ecef;
+.download .container button {
+  border-radius: 10rem;
 }
 
-.team .container .team-members .team-member .member-photo img {
-  width: 14rem;
+.contuct .container {
+  padding: 8rem 0;
 }
-.team .container .team-members .team-member .socials {
-  gap: 1rem;
+.contuct .container hr {
+  height: 0.2rem;
+  width: 3.25rem;
+  margin: 1.5rem auto;
 }
-.team .container .team-members .team-member .socials a {
-  height: 3rem;
-  width: 3rem;
-}
-.team .container .team-members .team-member .socials a svg {
-  width: 1rem;
-  height: 2rem;
-}
-.team .container .last-text {
-  margin: 0 auto;
-  max-width: 50rem;
-}
-
-.companys .container .company img {
-  height: 3rem;
-}
-
-.contuct {
-  background: url("./img/map-image.png") no-repeat center, #212529;
-  background-size: cover;
-}
-.contuct #Textarea {
-  height: 100%;
+.contuct .container #Textarea {
   min-height: 10rem;
 }
-
-.footer .container .socials {
-  gap: 1rem;
+.contuct .container button {
+  width: 100%;
+  border-radius: 10rem;
 }
-.footer .container .socials a {
-  height: 3rem;
-  width: 3rem;
-}
-.footer .container .socials a svg {
-  width: 1rem;
-  height: 2rem;
-}
-
-@media (max-width: 768px) {
-  .about .container .timeline::before {
-    left: 10%;
-  }
-  .about .container .timeline .timeline-img:last-child {
-    max-width: 10rem;
-    height: 8rem;
-    padding: 2rem;
-  }
-  .about .container .timeline .timeline-img:last-child h4 {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .about .container .timeline::before {
-    left: 2rem;
-  }
-  .about .container .timeline .timeline-img img {
-    border: 2px solid rgb(255, 193, 7);
-    outline: 5px solid #e9ecef;
-  }
-  .about .container .timeline .timeline-img:last-child {
-    margin-left: 0.85rem;
-    padding: 0.8rem;
-    width: 4rem;
-    height: 4rem;
-    outline: 5px solid #e9ecef;
-  }
-  .about .container .timeline .timeline-img:last-child .wraper {
-    margin: 0 auto;
-  }
-  .about .container .timeline .timeline-img:last-child h4 {
-    font-size: 10px;
-  }
+.contuct .container img {
+  width: 2.5rem;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
