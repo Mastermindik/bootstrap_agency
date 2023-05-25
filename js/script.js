@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   navbarShrink();
   document.addEventListener("scroll", navbarShrink);
-
+  
   function getColor() {
     let sections = document.querySelectorAll("section");
     let navLinks = document.querySelectorAll(".nav-link");
@@ -30,12 +30,11 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     })
   }
+  
   document.addEventListener("scroll", getColor);
-
-  $('.navbar-toggler').click(() => {
-    $('.navbar-collapse').toggleClass('show');
-  })
+  
   $('.nav-link').click(() => {
-    $('.navbar-collapse').removeClass('show');
+    $('#navbarNav').collapse('hide')
   });
+  $('.navbar-toggler').collapse('toggle')
 })
